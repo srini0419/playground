@@ -1,0 +1,6 @@
+<aura:component >
+	<p>parent component</p>
+    <c:L02_ChildCompAttr/>
+    
+    <c:L02_ChildCompAttr attr="child attribute set from Parent Component"/>
+</aura:component>

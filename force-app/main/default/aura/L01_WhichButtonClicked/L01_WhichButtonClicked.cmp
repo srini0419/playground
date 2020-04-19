@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="WhichButton" type="string"/>
+    <lightning:button aura:id="btn1" name="Button1" label="Button 1" onclick="{!c.clickHandler}"/>
+    <lightning:button aura:id="btn2" name="Button2" label="Button 2" onclick="{!c.clickHandler}"/>
+    <p>{!v.WhichButton} is Clicked</p>
+</aura:component>

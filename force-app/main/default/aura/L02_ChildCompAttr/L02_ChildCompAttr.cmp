@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:attribute name="attr" type="string" default="child default attribute"/>
+    <p>Child Attribute: {!v.attr}</p>
+</aura:component>
