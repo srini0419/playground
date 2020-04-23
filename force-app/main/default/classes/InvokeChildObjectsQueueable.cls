@@ -3,7 +3,7 @@ public with sharing class InvokeChildObjectsQueueable {
     List<Child_Object_Detail__c> lstCO = [SELECT Id, Object_Name__c, Count__c, Is_Queryable__c, Total_Count_SOQL__c,  
                                           Field_Count_SOQL__c, Field_SOQL__c 
                                           FROM Child_Object_Detail__c 
-                                          WHERE Process__c = true AND Field_Count__c = null AND Field__c = '' 
+                                          WHERE Process__c = true AND Total_Count__c = null AND Field_Count__c = null AND Field__c = '' 
                                           AND   Count__c >= :iOffset
                                           ORDER BY Count__c ASC
                                           LIMIT 50];
